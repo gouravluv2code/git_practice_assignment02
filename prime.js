@@ -1,13 +1,13 @@
-function check_prime(num)
+function check_prime(number)
 {
-let count=0;
-for(let i=0; i<num; i++)
+let factors=0;
+for(let i=1; i<number; i++)
 {
-if(num%i==0)
-{ count++;
+if(number%i==0)
+{ factors++;
 }
 }
-if(count==1){
+if(factors==2){
 return true;
 }return false;
 }
