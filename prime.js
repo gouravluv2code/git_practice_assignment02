@@ -1,4 +1,3 @@
-
 function check_prime(num){
 if( num<=1 ){
     return false ;
@@ -12,6 +11,3 @@ return true ;
 
 }
 console.log(check_prime(13)) ;
-
-
-
