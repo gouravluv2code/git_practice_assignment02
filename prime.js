@@ -1,23 +1,13 @@
-function check_prime(number)
-{
-let factors=0;
-for(let i=1; i<number; i++)
-{
-if(number%i==0)
-{ factors++;
+function check_prime(num){
+if( num<=1 ){
+    return false ;
 }
+for( let i=2 ; i<=num**0.5 ; i++){
+    if( num%i===0 ){
+        return false ;
+    }
 }
-if(factors==2){
-return true;
-}return false;
-}
+return true ;
 
-let ans=check_prime(13)
-if(ans==true){
-console.log("prime");
 }
-else{
-console.log("Not prime");
-}
-
-
+console.log(check_prime(13)) ;
